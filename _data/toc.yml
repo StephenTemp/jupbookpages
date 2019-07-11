@@ -39,3 +39,17 @@
   url: /features/notebooks
 - title: Features
   url: /features/features
+
+# ===== NEW SECTION ========================================
+- title: Regionalmap() function with netcdf4
+  url: /functions/RegionalMap() Function with netCDF4
+- title: Plotxy() function with netcdf
+  url: /functions/PlotXY() Function with NetCDF
+- title: Sectionalmap() function with netcdf
+  url: /functions/SectionalMap() Function with netCDF
+- title: Timeseries() function with netcdf4
+  url: /functions/TimeSeries() Function with netCDF4
+- title: Histogram() function with netcdf
+  url: /functions/Histogram() Function with netCDF
+- title: Depthprofile() with netcdf
+  url: /functions/DepthProfile() with netCDF
