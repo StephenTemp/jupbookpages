@@ -1,3 +1,15 @@
+---
+redirect_from:
+  - "license"
+title: 'License'
+prev_page:
+  url: 
+  title: ''
+next_page:
+  url: /intro
+  title: 'Intro'
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
 # License for this book
 
 All content in this book (ie, any files and content in the `content/` folder)
