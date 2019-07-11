@@ -42,7 +42,7 @@ search_max_words_in_content : 100  # In the search function, use at most this ma
 
 #######################################################################################
 # Interact link settings
-
+exclude: ['_build/features/citations.md']
 # General interact settings
 use_jupyterlab                   : false  # If 'true', interact links will use JupyterLab as the interface
 

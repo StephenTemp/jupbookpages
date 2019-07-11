@@ -18,7 +18,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 
 Because `jupyter-book` is built on top of Jekyll, we can use the excellent
-#[jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) book to
+[jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) book to
 include citations and a bibliography with your book.
 
 **Note that this only works if you're building your book HTML locally and
