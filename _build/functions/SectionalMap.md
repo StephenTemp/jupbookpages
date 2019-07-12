@@ -20,7 +20,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 import opedia
 import sys
@@ -55,7 +55,7 @@ else:
 
 
 
-### Testing Space
+### Input Space
 
 
 
@@ -235,7 +235,7 @@ meme
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 def sectionMap(tables, variabels, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, fname, exportDataFlag):
     data, lats, lons, subs, frameVars, units = [], [], [], [], [], []
@@ -305,7 +305,7 @@ def sectionMap(tables, variabels, dt1, dt2, lat1, lat2, lon1, lon2, depth1, dept
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 def xarraySectionMap(tables, variabels, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, fname, exportDataFlag):
     data, lats, lons, subs, frameVars, units = [], [], [], [], [], []
@@ -370,7 +370,7 @@ def xarraySectionMap(tables, variabels, dt1, dt2, lat1, lat2, lon1, lon2, depth1
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 def bokehSec(data, subject, fname, ys, xs, zs, units, variabels):
     TOOLS="crosshair,pan,wheel_zoom,zoom_in,zoom_out,box_zoom,undo,redo,reset,tap,save,box_select,poly_select,lasso_select,"
@@ -440,7 +440,7 @@ def bokehSec(data, subject, fname, ys, xs, zs, units, variabels):
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 def regulate(lat, lon, depth, data):
     depth = -1* depth 

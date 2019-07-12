@@ -164,7 +164,7 @@ HBox(children=(IntProgress(value=0, description='overall', max=1, style=Progress
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 def regionalMap(tables, variabels, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, fname, exportDataFlag):
     for i in tqdm(range(len(tables)), desc='overall'):
@@ -199,7 +199,7 @@ def regionalMap(tables, variabels, dt1, dt2, lat1, lat2, lon1, lon2, depth1, dep
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 def bokehMap(data, subject, fname, lat, lon, units, tables, variabels):
     TOOLS="crosshair,pan,zoom_in,wheel_zoom,zoom_out,box_zoom,reset,save,"

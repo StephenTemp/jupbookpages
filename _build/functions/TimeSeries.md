@@ -20,7 +20,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 import opedia
 import netCDF4
@@ -63,7 +63,7 @@ else:
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 def plotTS(tables, variables, startDate, endDate, lat1, lat2, lon1, lon2, depth1, depth2, fname, exportDataFlag, marker='-', msize=20, clr='purple'):
     p = []
@@ -125,7 +125,7 @@ def plotTS(tables, variables, startDate, endDate, lat1, lat2, lon1, lon2, depth1
 <div markdown="1" class="cell code_cell">
 <div class="input_area" markdown="1">
 ```python
-#TESTS ORIGINAL FUNCTION
+#CMAP INPUT
 
 tables = ['tblSST_AVHRR_OI_NRT', 'tblAltimetry_REP', 'tblPisces_NRT']    # see catalog.csv  for the complete list of tables and variable names
 variables = ['sst', 'sla', 'NO3']                                        # see catalog.csv  for the complete list of tables and variable names
@@ -266,7 +266,7 @@ HBox(children=(IntProgress(value=0, description='overall', max=3, style=Progress
 <div markdown="1" class="cell code_cell">
 <div class="input_area" markdown="1">
 ```python
-#TESTS XARRAY IMPLEMENTATION
+#XARRAY IMPLEMENTATION
 
 xFile = xr.open_dataset('http://engaging-opendap.mit.edu:8080/thredds/dodsC/las/id-a1d60eba44/data_usr_local_tomcat_content_cbiomes_20190510_20_darwin_v0.2_cs510_darwin_v0.2_cs510_nutrients.nc.jnl')
 
@@ -351,7 +351,7 @@ HBox(children=(IntProgress(value=0, description='overall', max=1, style=Progress
 
 
 <div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
+<div class="input_area hidecode" markdown="1">
 ```python
 def plotTSX(tables, variables, startDate, endDate, lat1, lat2, lon1, lon2, depth1, depth2, fname, exportDataFlag, marker='-', msize=20, clr='purple'):
     p = []
