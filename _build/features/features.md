@@ -4,8 +4,8 @@ prev_page:
   url: /features/notebooks
   title: 'Notebooks'
 next_page:
-  url: /functions/RegionalMap() Function with netCDF4
-  title: 'Regionalmap() function with netcdf4'
+  url: /functions/SectionalMap
+  title: 'Sectionalmap'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Features
