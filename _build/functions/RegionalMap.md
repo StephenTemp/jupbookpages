@@ -17,7 +17,11 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div markdown="1" class="cell code_cell">
 <div class="input_area" markdown="1">
+
 ```python
+"tags": [
+        "hide_input",
+    ]
 import opedia
 import math
 import common as com
@@ -168,27 +172,27 @@ HBox(children=(IntProgress(value=0, description='overall', max=1, style=Progress
 ```python
 def regionalMap(tables, variabels, dt1, dt2, lat1, lat2, lon1, lon2, depth1, depth2, fname, exportDataFlag):
     for i in tqdm(range(len(tables)), desc='overall'):
-        
+
         unit = tables[i].variables[variables[i]].attrs['units']
-        
+
         #toDateTime = tables[i].indexes['TIME'].to_datetimeindex()
         #tables[i]['TIME'] = toDateTime
         table = tables[i].sel(TIME = slice(startDate, endDate), LAT_C = slice(lat1, lat2), LON_C = slice(lon1, lon2), DEP_C = slice(depth1, depth2))
-        
+
         varData = table.variables[variables[i]][0,0,:,:].values       
-        
+
         lats = table.variables['LAT_C'].values.tolist()
         lons = table.variables['LON_C'].values.tolist()
-        
+
         shape = (len(lats), len(lons))
-        
+
         varData.reshape(shape)
 
         varData[varData < 0] = float('NaN')
         varData = [np.asarray(varData)]
         lats = [np.asarray(lats)]
         lons = [np.asarray(lons)]
-        
+
         bokehMap(varData, unit, 'regional', lats, lons, unit, 'OTHER', variables[i])
 
 ```
@@ -210,14 +214,14 @@ def bokehMap(data, subject, fname, lat, lon, units, tables, variabels):
         p1 = figure(tools=TOOLS, toolbar_location="right", title=subject[ind], plot_width=w, plot_height=h, x_range=(np.min(lon[ind]), np.max(lon[ind])), y_range=(np.min(lat[ind]), np.max(lat[ind])))
         p1.xaxis.axis_label = 'Longitude'
         p1.yaxis.axis_label = 'Latitude'
-    
+
         unit = units
-        
+
         bounds = com.getBounds(variabels[ind])
-        
+
         paletteName = com.getPalette(variabels[ind])
         low, high = bounds[0], bounds[1]
-        
+
         if low == None:
             low, high = np.nanmin(data[ind].flatten()), np.nanmax(data[ind].flatten())
         color_mapper = LinearColorMapper(palette=paletteName, low=low, high=high)
@@ -248,4 +252,3 @@ def bokehMap(data, subject, fname, lat, lon, units, tables, variabels):
 </div>
 
 </div>
-
