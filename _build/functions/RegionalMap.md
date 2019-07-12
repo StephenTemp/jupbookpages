@@ -19,9 +19,11 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 <div class="input_area" markdown="1">
 
 ```python
-"tags": [
-        "hide_input",
-    ]
+{
+  "tags": [
+          "hide_input",
+  ]
+}
 import opedia
 import math
 import common as com
