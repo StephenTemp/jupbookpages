@@ -18,12 +18,13 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 <div markdown="1" class="cell code_cell">
 <div class="input_area" markdown="1">
 
+"metadata": {
+    "tags": [
+        "jupyter:hide_cell"
+        ]
+    }
+
 ```python
-{
-  "tags": [
-          "hide_input",
-  ]
-}
 import opedia
 import math
 import common as com
