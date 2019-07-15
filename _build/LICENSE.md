@@ -3,11 +3,11 @@ redirect_from:
   - "license"
 title: 'License'
 prev_page:
-  url: 
-  title: ''
-next_page:
   url: /intro
   title: 'Intro'
+next_page:
+  url: /features/markdown
+  title: 'Markdown'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # License for this book
